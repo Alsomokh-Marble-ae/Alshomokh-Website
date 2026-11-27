@@ -1,16 +1,46 @@
+function toggleLanguage() {
+  const html = document.documentElement;
+  const isArabic = html.lang === "ar";
+  const nextLang = isArabic ? "en" : "ar";
 
-let currentLanguage = localStorage.getItem("alshomokh-language") || "en";
-function setLanguage(lang){
-  currentLanguage=lang;
-  document.documentElement.lang=lang;
-  document.documentElement.dir=lang==="ar"?"rtl":"ltr";
-  document.body.dir=lang==="ar"?"rtl":"ltr";
-  document.querySelectorAll("[data-en][data-ar]").forEach(el=>{
-    el.textContent=el.dataset[lang];
+  html.lang = nextLang;
+  html.dir = nextLang === "ar" ? "rtl" : "ltr";
+
+  document.querySelectorAll("[data-en][data-ar]").forEach((el) => {
+    el.textContent = el.getAttribute(
+      nextLang === "ar" ? "data-ar" : "data-en"
+    );
   });
-  const button=document.querySelector(".lang");
-  if(button) button.textContent=lang==="en"?"العربية":"English";
-  localStorage.setItem("alshomokh-language",lang);
+
+  const button = document.querySelector(".lang");
+  if (button) {
+    button.textContent = nextLang === "ar" ? "English" : "العربية";
+  }
+
+  try {
+    localStorage.setItem("siteLanguage", nextLang);
+  } catch (e) {}
 }
-function toggleLanguage(){setLanguage(currentLanguage==="en"?"ar":"en")}
-document.addEventListener("DOMContentLoaded",()=>setLanguage(currentLanguage));
+
+document.addEventListener("DOMContentLoaded", () => {
+  let saved = "en";
+
+  try {
+    saved = localStorage.getItem("siteLanguage") || "en";
+  } catch (e) {}
+
+  const html = document.documentElement;
+  html.lang = saved;
+  html.dir = saved === "ar" ? "rtl" : "ltr";
+
+  document.querySelectorAll("[data-en][data-ar]").forEach((el) => {
+    el.textContent = el.getAttribute(
+      saved === "ar" ? "data-ar" : "data-en"
+    );
+  });
+
+  const button = document.querySelector(".lang");
+  if (button) {
+    button.textContent = saved === "ar" ? "English" : "العربية";
+  }
+});
