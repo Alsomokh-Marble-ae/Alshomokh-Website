@@ -1,29 +1,123 @@
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Marble & Stone Collection | Al Shomokh</title>
-<meta name="description" content="Al Shomokh Marble - marble and natural stone company in Sharjah, UAE.">
-<link rel="stylesheet" href="assets/style.css">
-<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marble Products | Al Shomokh Marble</title>
+  <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-<header>
-<a class="brand" href="index.html" aria-label="Al Shomokh Marble Home"><div class="brand-mark">S</div><div class="brand-name">AL SHOMOKH<small>MARBLE | الشموخ للرخام</small></div></a>
-<nav><a href="index.html" class="" data-en="Home" data-ar="الرئيسية">Home</a><a href="about.html" class="" data-en="About Us" data-ar="من نحن">About Us</a><a href="products.html" class="active" data-en="Marble Types" data-ar="أنواع الرخام">Marble Types</a><a href="services.html" class="" data-en="Services" data-ar="خدماتنا">Services</a><a href="projects.html" class="" data-en="Projects" data-ar="أعمالنا">Projects</a><a href="contact.html" class="" data-en="Contact" data-ar="تواصل معنا">Contact</a><button class="lang" onclick="toggleLanguage()">العربية</button></nav>
+
+<header class="header">
+  <a class="brand" href="index.html">
+    <img src="assets/logo.jpeg" alt="Al Shomokh Marble Logo">
+  </a>
+  <nav>
+    <a href="index.html" data-en="Home" data-ar="الرئيسية">Home</a>
+    <a href="about.html" data-en="About Us" data-ar="من نحن">About Us</a>
+    <a href="products.html" data-en="Products" data-ar="المنتجات">Products</a>
+    <a href="services.html" data-en="Services" data-ar="خدماتنا">Services</a>
+    <a href="projects.html" data-en="Projects" data-ar="مشاريعنا">Projects</a>
+    <a href="contact.html" data-en="Contact" data-ar="اتصل بنا">Contact</a>
+    <button class="lang" onclick="toggleLanguage()">العربية</button>
+  </nav>
 </header>
 
-<div class="page-hero"><div class="eyebrow" data-en="OUR COLLECTION" data-ar="مجموعتنا">OUR COLLECTION</div><h1 data-en="Marble & Stone" data-ar="الرخام والأحجار">Marble & Stone</h1><p data-en="Explore natural textures, tones and finishes." data-ar="اكتشفوا تنوع الخامات والألوان والتشطيبات الطبيعية.">Explore natural textures, tones and finishes.</p></div>
-<section><div class="section-title"><h2 data-en="Our Materials" data-ar="أنواع الخامات">Our Materials</h2><p data-en="A selection of materials for different styles and spaces." data-ar="مجموعة من الخامات التي تناسب مختلف الأذواق والمساحات.">A selection of materials for different styles and spaces.</p></div>
-<div class="cards">
-<div class="card"><img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=900&q=85" alt="Natural marble"><div class="card-body"><h3 data-en="Natural Marble" data-ar="الرخام الطبيعي">Natural Marble</h3><p data-en="Distinctive natural patterns and elegant finishes." data-ar="عروق طبيعية مميزة وتشطيبات أنيقة.">Distinctive natural patterns and elegant finishes.</p></div></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=900&q=85" alt="Granite"><div class="card-body"><h3 data-en="Granite" data-ar="الجرانيت">Granite</h3><p data-en="A durable stone choice for practical, stylish spaces." data-ar="خيار حجري متين للمساحات العملية والأنيقة.">A durable stone choice for practical, stylish spaces.</p></div></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=900&q=85" alt="Natural stone"><div class="card-body"><h3 data-en="Natural Stone" data-ar="الأحجار الطبيعية">Natural Stone</h3><p data-en="Natural character and texture for interior and exterior use." data-ar="طابع وملمس طبيعي للاستخدامات الداخلية والخارجية.">Natural character and texture for interior and exterior use.</p></div></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=85" alt="Light stone interior"><div class="card-body"><h3 data-en="Light Tones" data-ar="الألوان الفاتحة">Light Tones</h3><p data-en="Soft, bright tones that create an open atmosphere." data-ar="درجات هادئة ومشرقة تمنح المكان إحساساً بالاتساع.">Soft, bright tones that create an open atmosphere.</p></div></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=900&q=85" alt="Dark stone interior"><div class="card-body"><h3 data-en="Dark Tones" data-ar="الألوان الداكنة">Dark Tones</h3><p data-en="Bold tones for a dramatic, refined look." data-ar="درجات جريئة لإطلالة مميزة وراقية.">Bold tones for a dramatic, refined look.</p></div></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=900&q=85" alt="Stone details"><div class="card-body"><h3 data-en="Custom Selection" data-ar="اختيارات حسب الطلب">Custom Selection</h3><p data-en="Contact us to discuss the material for your project." data-ar="تواصلوا معنا لمناقشة الخامة المناسبة لمشروعكم.">Contact us to discuss the material for your project.</p></div></div>
-</div><p class="note" data-en="Images are illustrative. Actual available materials and finishes may vary." data-ar="الصور توضيحية، وقد تختلف الخامات والتشطيبات المتوفرة فعلياً.">Images are illustrative. Actual available materials and finishes may vary.</p></section>
+<section class="section">
+  <div class="section-heading">
+    <p class="eyebrow" data-en="NATURAL BEAUTY" data-ar="جمال الطبيعة">NATURAL BEAUTY</p>
+    <h1 data-en="Marble & Stone Collection" data-ar="مجموعة الرخام والأحجار">Marble & Stone Collection</h1>
+    <p data-en="Explore different stone looks, colors and natural patterns."
+       data-ar="اكتشفوا تنوع ألوان الرخام والأحجار ونقوشها الطبيعية.">
+      Explore different stone looks, colors and natural patterns.
+    </p>
+  </div>
 
-<footer><p>AL SHOMOKH MARBLE | الشموخ للرخام</p><p data-en="Sharjah, United Arab Emirates" data-ar="الشارقة، الإمارات العربية المتحدة">Sharjah, United Arab Emirates</p><p>© 2026 Al Shomokh Marble. All Rights Reserved.</p></footer>
+  <div class="cards">
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=900&q=85" alt="White marble surface">
+      <div class="card-body">
+        <h3 data-en="White Marble" data-ar="الرخام الأبيض">White Marble</h3>
+        <p data-en="A bright and elegant look with natural veining."
+           data-ar="مظهر أنيق ومشرق بعروق طبيعية جميلة.">
+          A bright and elegant look with natural veining.
+        </p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=900&q=85" alt="Beige stone finish">
+      <div class="card-body">
+        <h3 data-en="Beige Marble" data-ar="الرخام البيج">Beige Marble</h3>
+        <p data-en="Warm natural tones for a calm and timeless style."
+           data-ar="درجات طبيعية دافئة تمنح المكان طابعاً هادئاً.">
+          Warm natural tones for a calm and timeless style.
+        </p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=85" alt="Dark stone finish">
+      <div class="card-body">
+        <h3 data-en="Dark Marble" data-ar="الرخام الداكن">Dark Marble</h3>
+        <p data-en="Deep shades that create a bold and luxurious appearance."
+           data-ar="ألوان عميقة تضيف لمسة فخامة وقوة للتصميم.">
+          Deep shades that create a bold and luxurious appearance.
+        </p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=900&q=85" alt="Natural stone finish">
+      <div class="card-body">
+        <h3 data-en="Natural Stone" data-ar="الأحجار الطبيعية">Natural Stone</h3>
+        <p data-en="Natural textures and unique patterns for different designs."
+           data-ar="ملمس طبيعي ونقوش مميزة تناسب تصاميم متعددة.">
+          Natural textures and unique patterns for different designs.
+        </p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1600607687644-c7171b42498f?auto=format&fit=crop&w=900&q=85" alt="Travertine stone">
+      <div class="card-body">
+        <h3 data-en="Travertine" data-ar="الترافرتين">Travertine</h3>
+        <p data-en="A distinctive stone with soft, natural patterns."
+           data-ar="حجر مميز بنقوش طبيعية ناعمة.">
+          A distinctive stone with soft, natural patterns.
+        </p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=85" alt="Luxury stone finish">
+      <div class="card-body">
+        <h3 data-en="Luxury Stone Finishes" data-ar="تشطيبات حجرية فاخرة">Luxury Stone Finishes</h3>
+        <p data-en="Elegant stone finishes for distinctive spaces."
+           data-ar="تشطيبات حجرية أنيقة للمساحات المميزة.">
+          Elegant stone finishes for distinctive spaces.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="contact-banner">
+  <h2 data-en="Looking for the right marble?" data-ar="تبحث عن الرخام المناسب؟">Looking for the right marble?</h2>
+  <a class="btn" href="contact.html" data-en="Contact Us" data-ar="تواصل معنا">Contact Us</a>
+</section>
+
+<footer>
+  <img src="assets/logo.jpeg" alt="Al Shomokh Marble Logo">
+  <p>Al Shomokh Marble | الشموخ للرخام</p>
+  <p>Sharjah, UAE</p>
+  <p>0542422822</p>
+  <p>alshomokh.marble@gmail.com</p>
+</footer>
+
 <script src="assets/script.js"></script>
-</body></html>
+</body>
+</html>
